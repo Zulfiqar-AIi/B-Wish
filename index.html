@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Happy Birthday Website 2.0 | Aoudumber Bade">
+    <meta name="github" content="https://github.com/Aoudumber-Bade">
+    <title>Zobia Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/faviconwhiteheart.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div id="error"><a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a> (<a href="http://firefox.com.cn/download/">Firefox</a>)</div>
+    
+    <!-- Fixed Audio Implementation -->
+    <audio id="myAudio" loop preload="auto">
+        <source src="aud.mp3" type="audio/mpeg">
+        <source src="aud.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Audio Control Button (for user interaction) -->
+    <div id="audioControl" style="position: fixed; top: 20px; right: 50px; z-index: 1000; background: rgba(255,255,255,0.2); padding: 10px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(10px);">
+        <i class="fa-solid fa-volume-high" id="audioIcon" style="color: white; font-size: 20px;"></i>
+    </div>
+
+    <div id="wrapper">
+        <div class="flag__birthday">
+            <img src="./images/1.png" alt="" width="350" class="flag__left">
+            <img src="./images/1.png" alt="" width="350" class="flag__right">
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="title">
+                    <h1 class="happy">
+                        <span style="--t: 4s;">H</span>
+                        <span style="--t: 4.2s;">a</span>
+                        <span style="--t: 4.4s;">p</span>
+                        <span style="--t: 4.6s;">p</span>
+                        <span style="--t: 4.8s;">y</span>
+                    </h1>
+                    <h1 class="birthday">
+                        <span style="--t: 5s;">B</span>
+                        <span style="--t: 5.2s;">i</span>
+                        <span style="--t: 5.4s;">r</span>
+                        <span style="--t: 5.6s;">t</span>
+                        <span style="--t: 5.8s;">h</span>
+                        <span style="--t: 6s;">d</span>
+                        <span style="--t: 6.2s;">a</span>
+                        <span style="--t: 6.4s;">y</span>
+                    </h1>
+                    <div class="hat">
+                        <img src="./images/hat.png" alt="" width="130">
+                    </div>
+                </div>
+                <div class="date__of__birth">
+                    <span>02 September 2025</span>
+                </div>
+                <div class="btn">
+                    <button id="btn__letter">
+                        <div class="mail">
+                            Click Here Zobia
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="box__account">
+                    <div class="image">
+                        <img src="./images/unnamed.png" alt="">
+                    </div>
+                    <div class="name">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Dear Zobia</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="balloon_one">
+                        <img width="100px" src="./images/balloon1.png" alt="">
+                    </div>
+                    <div class="balloon_two">
+                        <img width="100px" src="./images/balloon2.png" alt="">
+                    </div>
+                </div>
+                <div class="cricle">
+                    <div class="text__cricle">
+                        <span style="--i: 1;">h</span>
+                        <span style="--i: 2;">a</span>
+                        <span style="--i: 3;">p</span>
+                        <span style="--i: 4;">p</span>
+                        <span style="--i: 5;">y</span>
+                        <span style="--i: 6;">-</span>
+                        <span style="--i: 7;">b</span>
+                        <span style="--i: 8;">i</span>
+                        <span style="--i: 9;">r</span>
+                        <span style="--i: 10;">t</span>
+                        <span style="--i: 11;">h</span>
+                        <span style="--i: 12;">d</span>
+                        <span style="--i: 13;">a</span>
+                        <span style="--i: 14;">y</span>
+                        <span style="--i: 15;">-</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <div class="decorate_star star1" style="--t: 15s;"></div>
+        <div class="decorate_star star2" style="--t: 15.2s;"></div>
+        <div class="decorate_star star3" style="--t: 15.4s;"></div>
+        <div class="decorate_star star4" style="--t: 15.6s;"></div>
+        <div class="decorate_star star5" style="--t: 15.8s;"></div>
+        <div class="decorate_flower--one" style="--t: 15s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--two" style="--t: 15.3s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--three" style="--t: 15.6s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_bottom">
+            <img src="./images/decorate.png" alt="" width="100">
+        </div>
+        <div class="smiley__icon">
+            <img src="./images/smiley_icon.png" alt="" width="100">
+        </div>
+
+        <div class="boxMail">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="boxMail-container">
+                <div class="card1">
+                    <div class="userImg">
+                        <img src="images/unnamed.png" alt="">
+                    </div>
+                    <h4 class="username">To: Zobia 💖 (Click here too)<span class="underline"></span></h4>
+
+                    <h3>Happy Birthday</h3>
+                    <div class="imageCute">
+                        <img src="cute1.png" alt="">
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2-content">
+                        <h3>To You!</h3>
+                        <h2>Happy birthday 🥳🎂🥳 bestie! When we first met online, I never imagined we'd become such close friends. Over time, our friendship has grown stronger and now you're like family to me - truly an amazing friend. I wish I could help you with all the challenges you're facing. Remember, I'm always here for you 🤗 You can talk to me anytime about anything, especially things you might not feel comfortable sharing with others. I hope this year brings all your dreams to life and everything you've been working toward comes true. Wishing you the happiest birthday 🎈🎂🎈 and hoping this day brings you lots of joy and smiles. Don't let anything bring you down - you deserve all the happiness in the world! Keep being the wonderful person you are 😌
+                        </h2>
+
+                        <div class="imageCute2">
+                            <img src="cute2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    // Enhanced Mobile Audio Management
+let audio = document.getElementById('myAudio');
+let audioControl = document.getElementById('audioControl');
+let audioIcon = document.getElementById('audioIcon');
+let isPlaying = false;
+let userInteracted = false;
+let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+// Function to play audio
+function playAudio() {
+    if (audio && !isPlaying) {
+        audio.play().then(() => {
+            isPlaying = true;
+            audioIcon.classList.remove('fa-volume-xmark');
+            audioIcon.classList.add('fa-volume-high');
+            console.log('Audio started playing');
+            // Hide the audio prompt once playing
+            audioControl.style.animation = 'none';
+        }).catch(error => {
+            console.log('Audio autoplay prevented:', error);
+            showAudioPrompt();
+        });
+    }
+}
+
+// Function to pause audio
+function pauseAudio() {
+    if (audio && isPlaying) {
+        audio.pause();
+        isPlaying = false;
+        audioIcon.classList.remove('fa-volume-high');
+        audioIcon.classList.add('fa-volume-xmark');
+    }
+}
+
+// Function to toggle audio
+function toggleAudio() {
+    if (isPlaying) {
+        pauseAudio();
+    } else {
+        playAudio();
+    }
+}
+
+// Show audio prompt (more aggressive on mobile)
+function showAudioPrompt() {
+    audioControl.style.animation = 'pulse 1s infinite';
+    audioControl.style.transform = 'scale(1.2)';
+    audioControl.title = 'Click to play birthday music! 🎵';
+    
+    // Add a more visible prompt for mobile
+    if (isMobile) {
+        audioControl.style.background = 'rgba(255, 120, 130, 0.8)';
+        audioControl.style.boxShadow = '0 0 20px rgba(255, 120, 130, 0.6)';
+    }
+}
+
+// Audio control click event
+audioControl.addEventListener('click', function() {
+    userInteracted = true;
+    toggleAudio();
+    // Reset styling after interaction
+    audioControl.style.transform = 'scale(1)';
+    audioControl.style.background = 'rgba(255,255,255,0.2)';
+    audioControl.style.boxShadow = 'none';
+});
+
+// Enhanced mobile interaction detection
+function enableAudioOnInteraction() {
+    if (!userInteracted) {
+        userInteracted = true;
+        console.log('User interaction detected, attempting to play audio');
+        
+        // Small delay to ensure the interaction is registered
+        setTimeout(() => {
+            playAudio();
+        }, 100);
+        
+        // Remove event listeners after first interaction
+        document.removeEventListener('click', enableAudioOnInteraction);
+        document.removeEventListener('touchstart', enableAudioOnInteraction);
+        document.removeEventListener('touchend', enableAudioOnInteraction);
+        document.removeEventListener('keydown', enableAudioOnInteraction);
+    }
+}
+
+// Page load event
+window.addEventListener('load', function() {
+    audio.volume = 0.7;
+    
+    // Different approach for mobile vs desktop
+    if (isMobile) {
+        console.log('Mobile device detected');
+        // Show prompt immediately on mobile
+        showAudioPrompt();
+        
+        // Try to play after a longer delay on mobile
+        setTimeout(() => {
+            playAudio();
+        }, 2000);
+    } else {
+        // Desktop behavior
+        setTimeout(() => {
+            playAudio();
+        }, 1000);
+    }
+});
+
+// Handle audio events
+audio.addEventListener('loadstart', function() {
+    console.log('Audio loading started');
+});
+
+audio.addEventListener('canplaythrough', function() {
+    console.log('Audio can play through');
+    if (!userInteracted && !isMobile) {
+        setTimeout(() => {
+            playAudio();
+        }, 500);
+    }
+});
+
+audio.addEventListener('error', function(e) {
+    console.log('Audio error:', e);
+    audioIcon.classList.remove('fa-volume-high');
+    audioIcon.classList.add('fa-volume-xmark');
+    showAudioPrompt();
+});
+
+// Enhanced interaction listeners for mobile
+document.addEventListener('click', enableAudioOnInteraction);
+document.addEventListener('touchstart', enableAudioOnInteraction);
+document.addEventListener('touchend', enableAudioOnInteraction);
+document.addEventListener('keydown', enableAudioOnInteraction);
+
+// Try to unlock audio context on first touch (iOS specific)
+document.addEventListener('touchstart', function unlockAudio() {
+    audio.play().then(() => {
+        audio.pause();
+        audio.currentTime = 0;
+        console.log('Audio context unlocked');
+    }).catch(() => {
+        console.log('Failed to unlock audio context');
+    });
+    
+    document.removeEventListener('touchstart', unlockAudio);
+}, { once: true });
+
+// Enhanced button interactions
+$("#btn__letter").on("click", function () {
+    // Force audio to play when button is clicked
+    userInteracted = true;
+    if (!isPlaying) {
+        playAudio();
+    }
+    
+    // Rest of your existing code...
+    $(".box__letter").slideDown()
+    setTimeout(function () {
+        $(".letter__border").slideDown();
+    }, 1000)
+    // ... (keep the rest of your existing button logic)
+});
+
+// Enhanced mail interaction
+let mailBox = document.querySelector('.mail');
+let boxmail = document.querySelector('.boxMail');
+var close = document.querySelector('.fa-xmark');
+
+mailBox.onclick = function () {
+    userInteracted = true;
+    // Force audio to play when mail is opened
+    if (!isPlaying) {
+        playAudio();
+    }
+    mailBox.classList.toggle('active');
+    boxmail.classList.add('active');
+}
+close.onclick = function () {
+    boxmail.classList.remove('active');
+};
+
+// Visibility change event (when user returns to tab)
+document.addEventListener('visibilitychange', function() {
+    if (!document.hidden && userInteracted && !isPlaying) {
+        setTimeout(() => {
+            playAudio();
+        }, 500);
+    }
+});
+
+// Focus event (when window gets focus)
+window.addEventListener('focus', function() {
+    if (userInteracted && !isPlaying) {
+        setTimeout(() => {
+            playAudio();
+        }, 500);
+    }
+});
+
+// Add enhanced CSS for mobile
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+    
+    @keyframes mobilePulse {
+        0% { transform: scale(1.2); box-shadow: 0 0 20px rgba(255, 120, 130, 0.6); }
+        50% { transform: scale(1.4); box-shadow: 0 0 30px rgba(255, 120, 130, 0.8); }
+        100% { transform: scale(1.2); box-shadow: 0 0 20px rgba(255, 120, 130, 0.6); }
+    }
+    
+    #audioControl {
+        transition: all 0.3s ease;
+    }
+    
+    #audioControl:hover {
+        transform: scale(1.1);
+        background: rgba(255,255,255,0.3) !important;
+    }
+    
+    /* Mobile specific styling */
+    @media (max-width: 768px) {
+        #audioControl {
+            top: 10px !important;
+            right: 10px !important;
+            padding: 15px !important;
+            background: rgba(255, 120, 130, 0.3) !important;
+        }
+        
+        #audioControl.mobile-prompt {
+            animation: mobilePulse 1.5s infinite;
+            background: rgba(255, 120, 130, 0.8) !important;
+        }
+    }
+`;
+document.head.appendChild(style);
+
+// Add mobile-specific class if needed
+if (isMobile) {
+    setTimeout(() => {
+        audioControl.classList.add('mobile-prompt');
+    }, 1000);
+}
+</script>
+
+</html>
